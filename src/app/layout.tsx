@@ -11,11 +11,11 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Teutemacher: Fahrzeugelektronik & Bremsen | Warendorf",
-  description: "Experten für Elektronik, Elektroautos & Bremsen in Warendorf. Professionelle Werkstatt mit modernem Service. Jetzt Termin vereinbaren!",
+  title: "Elektronik & Bremsen Warendorf | Teutemacher",
+  description: "Professioneller Service für Fahrzeugelektronik, E-Autos und Bremsen in Warendorf. Erfahren, präzise, zuverlässig. Jetzt Termin vereinbaren!",
   openGraph: {
-    title: "Teutemacher: Fahrzeugelektronik & Bremsen | Warendorf",
-    description: "Experten für Elektronik, Elektroautos & Bremsen in Warendorf. Professionelle Werkstatt mit modernem Service. Jetzt Termin vereinbaren!",
+    title: "Elektronik & Bremsen Warendorf | Teutemacher",
+    description: "Professioneller Service für Fahrzeugelektronik, E-Autos und Bremsen in Warendorf. Erfahren, präzise, zuverlässig. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
   },
