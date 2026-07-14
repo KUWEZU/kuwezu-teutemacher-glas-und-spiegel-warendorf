@@ -1,1 +1,39 @@
-{"averageRating":null,"totalCount":0,"source":"Google","fetchedAt":"","reviews":[]}
+{
+  "averageRating": 4.7,
+  "totalCount": 23,
+  "source": "Google",
+  "fetchedAt": "2026-07-14T13:47:15.383Z",
+  "reviews": [
+    {
+      "author": "R Enderweit",
+      "rating": 5,
+      "text": "Ich wurde heute als Kundin sehr freundlich und ausgesprochen unkompliziert bedient. Ein Mitarbeiter hat mir kleine Glasscheiben schnell, präzise und ohne Umstände zugeschnitten. Besonders hervorheben möchte ich seine herzliche Art, seine Lösungsorientierung und die selbstverständliche Professionalität, mit der er gearbeitet hat. Ein sehr positives Erlebnis, danke!",
+      "date": "vor 6 Monaten"
+    },
+    {
+      "author": "Burkhard Temme",
+      "rating": 5,
+      "text": "Absolut perfekte Beratung. Habe bei dem Mitarbeiter Herrn K. eine Glasscheibe als Küchenrückwand bestellt. Ausführliche Beratung bei den zu beachtenden Details, sehr freundliche Ansprache, perfekte Kommunikation.\nAbsolut zu empfehlen. Keine bessere handwerkliche Beratung und Leistung in den letzten Jahren bekommen.",
+      "date": "vor 4 Jahren"
+    },
+    {
+      "author": "David",
+      "rating": 5,
+      "text": "Freundliche Beratung und sehr gute und hilfreiche Ratschläge.",
+      "date": "vor 7 Jahren"
+    },
+    {
+      "author": "L H",
+      "rating": 5,
+      "text": "Mittelständisches Familienunternehmen (über mehre Generationen in Familienbesitz!) Freundlich, kompetent, preiswert, Kundenorientiert und innovativ!",
+      "date": "vor 5 Jahren"
+    },
+    {
+      "author": "Andreas Rossau",
+      "rating": 1,
+      "text": "Unfreundlich",
+      "date": "vor 4 Jahren"
+    }
+  ],
+  "_debug": "gmb-import"
+}
