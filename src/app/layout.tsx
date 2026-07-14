@@ -20,11 +20,8 @@ export const metadata: Metadata = {
     locale: "de_DE",
   },
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
-      { url: "/logo.png", type: "image/png" },
-    ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    icon: [{ url: "https://r2.kuwezu.de/konzepte/autofit/autofit_logo.webp" }],
+    apple: [{ url: "https://r2.kuwezu.de/konzepte/autofit/autofit_logo.webp" }],
   },
 };
 
