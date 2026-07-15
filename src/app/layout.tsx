@@ -11,11 +11,11 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Elektronik & Bremsen Warendorf | Teutemacher",
-  description: "Professioneller Service für Fahrzeugelektronik, E-Autos und Bremsen in Warendorf. Erfahren, präzise, zuverlässig. Jetzt Termin vereinbaren!",
+  title: "Teutemacher Glas und Spiegel | Sonstige in Warendorf",
+  description: "Teutemacher Glas und Spiegel in Warendorf — Ihr Experte für Elektronik, Elektroautos, Bremsen und mehr. Jetzt Termin vereinbaren!",
   openGraph: {
-    title: "Elektronik & Bremsen Warendorf | Teutemacher",
-    description: "Professioneller Service für Fahrzeugelektronik, E-Autos und Bremsen in Warendorf. Erfahren, präzise, zuverlässig. Jetzt Termin vereinbaren!",
+    title: "Teutemacher Glas und Spiegel | Sonstige in Warendorf",
+    description: "Teutemacher Glas und Spiegel in Warendorf — Ihr Experte für Elektronik, Elektroautos, Bremsen und mehr. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
   },

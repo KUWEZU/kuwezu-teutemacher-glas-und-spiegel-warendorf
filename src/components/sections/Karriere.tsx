@@ -1,15 +1,36 @@
 import { Briefcase, GraduationCap, Users, Heart, ArrowRight } from "lucide-react";
 import { client } from "@/data/client";
 
-const BENEFITS = [
-  { icon: Briefcase,     title: "Sicherer Arbeitsplatz", text: "Unbefristete Festanstellung in einem stabilen, wachsenden Betrieb." },
-  { icon: GraduationCap, title: "Weiterbildung",         text: "Regelmäßige Schulungen, Zertifizierungen und Aufstiegsmöglichkeiten." },
-  { icon: Users,         title: "Starkes Team",          text: "Kollegiales Umfeld mit flachen Hierarchien und echter Teamkultur." },
-  { icon: Heart,         title: "Work-Life-Balance",     text: "Faire Arbeitszeiten, 30 Tage Urlaub und Familienfreundlichkeit." },
+// Neutrale Default-Kacheln — bewusst OHNE konkrete Zusagen (kein "30 Tage
+// Urlaub"/"unbefristet"): gelten für jeden Betrieb, ohne etwas zu versprechen,
+// das der Inhaber nicht bestätigt hat. Pro Kunde überschreibbar via
+// client.karriere.benefits (zentrale Datenschicht).
+const DEFAULT_BENEFITS = [
+  { icon: Briefcase,     title: "Verlässlicher Betrieb", text: "Ein eingespielter Betrieb mit langfristiger Perspektive." },
+  { icon: GraduationCap, title: "Entwicklung",           text: "Wir fördern fachliche Weiterentwicklung und Qualifizierung." },
+  { icon: Users,         title: "Starkes Team",          text: "Kollegiales Miteinander und kurze Wege im Alltag." },
+  { icon: Heart,         title: "Fairness",              text: "Faire Bedingungen und ein respektvolles Umfeld." },
 ];
 
+// Icons sind Positions-basiert — Overrides aus der Datenschicht liefern nur
+// title/text, die Icon-Zuordnung bleibt stabil (wie bei den Statistik-Kacheln).
+const BENEFIT_ICONS = [Briefcase, GraduationCap, Users, Heart];
+
 export function Karriere() {
+  // Ganze Section pro Kunde abschaltbar (Default: an, auch für alte client.ts).
+  if (client.karriere?.enabled === false) return null;
+
   const jobs = client.karriere?.jobs ?? [];
+  // Button-Ziel: hinterlegte http(s)-URL → externer Link im NEUEN Tab
+  // (noopener noreferrer); leer → In-Page-Anker #kontakt wie bisher.
+  const buttonUrl = client.karriere?.buttonUrl ?? null;
+  const ctaHref = buttonUrl ?? "#kontakt";
+  const ctaExternal = buttonUrl !== null;
+  const ctaProps = ctaExternal ? { target: "_blank", rel: "noopener noreferrer" } : {};
+  const benefitOverrides = client.karriere?.benefits ?? null;
+  const benefits = benefitOverrides?.length
+    ? benefitOverrides.map((b, i) => ({ icon: BENEFIT_ICONS[i % BENEFIT_ICONS.length], title: b.title, text: b.text }))
+    : DEFAULT_BENEFITS;
 
   return (
     <section
@@ -38,7 +59,7 @@ export function Karriere() {
           <div>
             <h3 className="text-2xl font-bold text-brand-heading mb-7">Warum zu uns?</h3>
             <div className="grid sm:grid-cols-2 gap-5">
-              {BENEFITS.map(({ icon: Icon, title, text }) => (
+              {benefits.map(({ icon: Icon, title, text }) => (
                 <div key={title}
                   className="border border-brand-border rounded-2xl p-6
                              hover:border-icon-ring transition-all"
@@ -53,13 +74,15 @@ export function Karriere() {
             </div>
           </div>
 
-          {/* Stellen */}
+          {/* Stellen — bei leerer Liste komplett ausgeblendet (kein leerer Block) */}
           <div>
+            {jobs.length > 0 && (
+              <>
             <h3 className="text-2xl font-bold text-brand-heading mb-7">Offene Stellen</h3>
             <ul className="space-y-4" role="list" aria-label="Stellenangebote">
               {jobs.map((job) => (
                 <li key={job.title}>
-                  <a href="#kontakt"
+                  <a href={ctaHref} {...ctaProps}
                     className="flex items-center justify-between gap-4 border border-brand-border rounded-2xl p-5
                                hover:border-icon-ring transition-all group min-h-[72px]"
                     style={{ backgroundColor: "var(--color-card-bg)", boxShadow: "var(--card-shadow)" }}
@@ -75,13 +98,15 @@ export function Karriere() {
                 </li>
               ))}
             </ul>
+              </>
+            )}
 
-            <div className="mt-6 p-6 bg-icon-surface border border-icon-ring rounded-2xl">
+            <div className={jobs.length > 0 ? "mt-6 p-6 bg-icon-surface border border-icon-ring rounded-2xl" : "p-6 bg-icon-surface border border-icon-ring rounded-2xl"}>
               <p className="text-base text-brand-text/80 leading-relaxed">
-                <span className="font-bold text-safe-primary">Keine passende Stelle dabei?</span><br />
+                <span className="font-bold text-safe-primary">{jobs.length > 0 ? "Keine passende Stelle dabei?" : "Interesse an einer Mitarbeit?"}</span><br />
                 Initiativbewerbungen sind jederzeit willkommen.
               </p>
-              <a href="#kontakt"
+              <a href={ctaHref} {...ctaProps}
                 className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 bg-brand-primary text-on-primary
                            font-semibold rounded-xl hover:bg-brand-primary-hover transition-all text-base min-h-[44px]">
                 Initiativ bewerben <ArrowRight className="w-4 h-4" aria-hidden="true" />
