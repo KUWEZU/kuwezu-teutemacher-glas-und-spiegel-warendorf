@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-07-18T19:14:01.206Z
+ * Erstellt: 2026-07-18T22:23:16.376Z
  * Kundennummer: 221
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -39,7 +39,7 @@ export const client = {
 
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
-    bild: "https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    bild: "https://r2.kuwezu.de/kunden/221/stock-1vwznm6.jpg",
     ueberschrift: "Teutemacher Glas und Spiegel — Ihr Partner in Warendorf",
     text1: "Als erfahrener Sonstige-Betrieb in Warendorf bieten wir unseren Kunden seit Jahren zuverlässigen Service und kompetente Beratung. Mit Fachkompetenz und modernen Methoden lösen wir Ihre Anliegen effizient und zuverlässig.",
     text2: "Wir setzen auf höchste Qualität, transparente Preise und persönlichen Service — damit Sie rundum zufrieden sind.",
