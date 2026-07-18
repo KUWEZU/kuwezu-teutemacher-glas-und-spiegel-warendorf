@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-07-15T17:00:41.203Z
+ * Erstellt: 2026-07-18T19:14:01.206Z
  * Kundennummer: 221
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -113,6 +113,12 @@ export const client = {
 
   // ── Features ───────────────────────────────────────────────────────────────
   newsEnabled: false as boolean,
+
+  // ── Impressum / Rechtsangaben (Migration 095) ───────────────────────────────
+  impressum: {} as {
+    inhaber?: string; rechtsform?: string; ust_id?: string; handelsregister?: string;
+    registergericht?: string; aufsichtsbehoerde?: string; verantwortlicher?: string;
+  },
 } as const;
 
 export type LeistungConfig = (typeof client.leistungen)[number];

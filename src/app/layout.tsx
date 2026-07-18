@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_DE",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Teutemacher Glas und Spiegel | Sonstige in Warendorf",
+    description: "Teutemacher Glas und Spiegel in Warendorf — Ihr Experte für Elektronik, Elektroautos, Bremsen und mehr. Jetzt Termin vereinbaren!",
+  },
   icons: {
     icon: [{ url: "https://r2.kuwezu.de/konzepte/autofit/autofit_logo.webp" }],
     apple: [{ url: "https://r2.kuwezu.de/konzepte/autofit/autofit_logo.webp" }],

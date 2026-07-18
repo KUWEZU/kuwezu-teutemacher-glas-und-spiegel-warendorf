@@ -32,6 +32,10 @@
   --color-icon-surface:   color-mix(in srgb, #e30613 10%, transparent);
   --color-icon-ring:      color-mix(in srgb, #e30613 20%, transparent);
 
+  /* Barrierefreiheits-Widget-Trigger — kontrast-adaptiv (WCAG Non-text ≥3:1 vs pageBg) */
+  --color-a11y-trigger:      #e30613;
+  --color-a11y-trigger-text: #FFFFFF;
+
   --font-sans: var(--font-geist-sans);
 }
 
