@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-07-19T15:47:13.180Z
+ * Erstellt: 2026-07-19T17:33:38.712Z
  * Kundennummer: 221
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -17,8 +17,8 @@ export const client = {
   telefon: "02581 933330",
   email: "",
   website: "https://teutemacher.de",
-  logo: "https://r2.kuwezu.de/konzepte/autofit/autofit_logo.webp",
-  standort_bild: "https://r2.kuwezu.de/kunden/221/standort.webp",
+  logo: "https://r2.kuwezu.de/cdn-cgi/image/width=320,fit=contain,quality=78,format=auto/konzepte/autofit/autofit_logo.webp",
+  standort_bild: "https://r2.kuwezu.de/cdn-cgi/image/width=1024,fit=cover,quality=78,format=auto/kunden/221/standort.webp",
 
   // ── Branding ───────────────────────────────────────────────────────────────
   farben: {
@@ -28,7 +28,9 @@ export const client = {
   },
   // ── Hero ───────────────────────────────────────────────────────────────────
   hero: {
-    bild: "https://r2.kuwezu.de/kunden/221/hero.webp",
+    bild: "https://r2.kuwezu.de/cdn-cgi/image/width=1600,fit=cover,quality=78,format=auto/kunden/221/hero.webp",
+    bildSrcset: "https://r2.kuwezu.de/cdn-cgi/image/width=768,fit=cover,quality=78,format=auto/kunden/221/hero.webp 768w, https://r2.kuwezu.de/cdn-cgi/image/width=1280,fit=cover,quality=78,format=auto/kunden/221/hero.webp 1280w, https://r2.kuwezu.de/cdn-cgi/image/width=1920,fit=cover,quality=78,format=auto/kunden/221/hero.webp 1920w",
+    bildSizes: "100vw",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
     ueberschrift: "Sonstige — professionell & zuverlässig",
     ueberschriftHighlight: "professionell & zuverlässig",
@@ -39,7 +41,9 @@ export const client = {
 
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
-    bild: "https://r2.kuwezu.de/kunden/221/stock-1vwznm6.jpg",
+    bild: "https://r2.kuwezu.de/cdn-cgi/image/width=1280,fit=cover,quality=78,format=auto/kunden/221/stock-1vwznm6.jpg",
+    bildSrcset: "https://r2.kuwezu.de/cdn-cgi/image/width=640,fit=cover,quality=78,format=auto/kunden/221/stock-1vwznm6.jpg 640w, https://r2.kuwezu.de/cdn-cgi/image/width=1024,fit=cover,quality=78,format=auto/kunden/221/stock-1vwznm6.jpg 1024w, https://r2.kuwezu.de/cdn-cgi/image/width=1536,fit=cover,quality=78,format=auto/kunden/221/stock-1vwznm6.jpg 1536w",
+    bildSizes: "(max-width: 1024px) 100vw, 50vw",
     ueberschrift: "Teutemacher Glas und Spiegel — Ihr Partner in Warendorf",
     text1: "Als erfahrener Sonstige-Betrieb in Warendorf bieten wir unseren Kunden seit Jahren zuverlässigen Service und kompetente Beratung. Mit Fachkompetenz und modernen Methoden lösen wir Ihre Anliegen effizient und zuverlässig.",
     text2: "Wir setzen auf höchste Qualität, transparente Preise und persönlichen Service — damit Sie rundum zufrieden sind.",
@@ -52,25 +56,28 @@ export const client = {
     {
       slug: "elektronik",
       title: "Elektronik",
-      bild: "https://r2.kuwezu.de/bibliothek/Elektronik/1777878497653-leistung_multimeter.webp",
+      bild: "https://r2.kuwezu.de/cdn-cgi/image/width=800,fit=cover,quality=78,format=auto/bibliothek/Elektronik/1777878497653-leistung_multimeter.webp",
+      bildSrcset: "https://r2.kuwezu.de/cdn-cgi/image/width=400,fit=cover,quality=78,format=auto/bibliothek/Elektronik/1777878497653-leistung_multimeter.webp 400w, https://r2.kuwezu.de/cdn-cgi/image/width=800,fit=cover,quality=78,format=auto/bibliothek/Elektronik/1777878497653-leistung_multimeter.webp 800w",
       description: "Professionelle Elektronik — schnell, zuverlässig und zu fairen Preisen.",
       highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
     },
     {
       slug: "elektroautos",
       title: "Elektroautos",
-      bild: "https://r2.kuwezu.de/bibliothek/Elektroautos/1777878408924-leistung_elektroautos.webp",
+      bild: "https://r2.kuwezu.de/cdn-cgi/image/width=800,fit=cover,quality=78,format=auto/bibliothek/Elektroautos/1777878408924-leistung_elektroautos.webp",
+      bildSrcset: "https://r2.kuwezu.de/cdn-cgi/image/width=400,fit=cover,quality=78,format=auto/bibliothek/Elektroautos/1777878408924-leistung_elektroautos.webp 400w, https://r2.kuwezu.de/cdn-cgi/image/width=800,fit=cover,quality=78,format=auto/bibliothek/Elektroautos/1777878408924-leistung_elektroautos.webp 800w",
       description: "Professionelle Elektroautos — schnell, zuverlässig und zu fairen Preisen.",
       highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
-      bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
+      bild: "https://r2.kuwezu.de/cdn-cgi/image/width=800,fit=cover,quality=78,format=auto/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
+      bildSrcset: "https://r2.kuwezu.de/cdn-cgi/image/width=400,fit=cover,quality=78,format=auto/bibliothek/Bremsen/1777878346158-bremsen_service.webp 400w, https://r2.kuwezu.de/cdn-cgi/image/width=800,fit=cover,quality=78,format=auto/bibliothek/Bremsen/1777878346158-bremsen_service.webp 800w",
       description: "Professionelle Bremsen — schnell, zuverlässig und zu fairen Preisen.",
       highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
     }
-  ] as { slug: string; title: string; bild: string; description: string; highlights: string[] }[],
+  ] as { slug: string; title: string; bild: string; bildSrcset: string; description: string; highlights: string[] }[],
 
   // ── Karriere ───────────────────────────────────────────────────────────────
   // Kundenpflegbar (Stammdaten) bzw. künftig autoservice.jobs-Feed — keine
